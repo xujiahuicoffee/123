@@ -1,0 +1,11 @@
+第一步：
+
+在GitHub网站上手动创建一个repository，在GitHubDesktop上创建肯定也可以的，但是我不会。
+
+第二步：
+
+GitHubDesktop左上角点击File————>Clone repository 将刚刚创建的repository拉取到本地
+
+第三步：
+
+将在start.spring.io创建的springboot压缩包直接解压到拉取到本地的目录下
