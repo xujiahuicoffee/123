@@ -9,3 +9,29 @@ GitHubDesktop左上角点击File————>Clone repository 将刚刚创建的
 第三步：
 
 将在start.spring.io创建的springboot压缩包直接解压到拉取到本地的目录下
+
+
+
+
+
+如何关联GitHub的远程仓库与本地仓库
+
+1、在GitHub上创建远程仓库  例如：java_demo
+
+2、在本地硬盘创建本地仓库，例如：在D://My/MyGithub/目录下创建一个新目录java_demo
+
+3、在java_demo目录下右击"Git bash here",运行 git init 命令把这个目录变成Git可以管理的仓库
+
+4、运行 git remote add origin git@github.com:xujiahuicoffee/java_demo.git 命令将本地仓库与远程仓库关联
+
+5、git pull origin master 先拉取
+   因为远程仓库创建的时候会有个“commit readme.md”这个操作记录,本地仓库是不知道你有这个提交的，也就是说这个记录没在本地仓库是不存在的，所以俩个版本是不一致的
+  
+6、运行 git add -A . 命令（注意有个点.）将本地所有改动添加到暂存区，然后运行 git commit 提交
+
+7、运行 git push -u origin master 提交到远程仓库
+   第一次推送master分支时，加上了-u参数，Git不但会把本地的master分支内容推送的远程新的master分支，还会把本地的master分支和远程的master分支关联起来，在以后的推送或者拉取时就可以简化命令。
+
+
+
+
